@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08121d" />
+    <link rel="icon" href="data:," />
+    <title>云阙计划 · 听潮夜航</title>
+    <script type="module" crossorigin src="./assets/GLTFLoader-YXwiaClu.js"></script>
+    <script type="module" crossorigin src="./assets/scene-opening-CNIjarR6.js"></script>
+    <script type="module" crossorigin src="./assets/scene-blockout-C4myomq2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/scene-opening-713OyeOc.css">
+    <link rel="stylesheet" crossorigin href="./assets/scene-blockout-BRGVWDmP.css">
+  </head>
+  <body class="voyage-page" data-experience="night-voyage">
+    <main class="blockout-shell">
+      <canvas id="blockout-canvas" tabindex="0" aria-label="夜航布置水城，拖动环绕，点击水面放置航标"></canvas>
+      <header class="blockout-header">
+        <span class="back-link">云阙计划 · 朋友试玩</span>
+        <div><p>云阙计划 / 灯火由你编排</p><h1>听潮夜航</h1></div>
+        <div class="phase">LIGHTS ON THE WATER <span>01</span></div>
+      </header>
+      <div class="explore-actions">
+        <button id="explore-toggle" type="button" disabled>进入探索</button>
+        <button id="walk-reset" type="button" hidden>返回安全位置</button>
+        <div class="sound-controls" aria-label="环境声音控制">
+          <div class="sound-row"><button id="ambience-toggle" type="button" aria-pressed="false" aria-describedby="ambience-status">开启环境声</button>
+          <label for="ambience-volume">音量</label><input id="ambience-volume" type="range" min="0" max="100" value="30" aria-label="环境声音量" /></div>
+          <span id="ambience-status" role="status">点击开启风声与水声</span>
+        </div>
+        <details id="graphics-settings" class="graphics-settings">
+          <summary><span id="graphics-label">画质 · 细腻</span></summary>
+          <div class="graphics-panel">
+            <div class="graphics-options" role="group" aria-label="画质档位">
+              <button type="button" data-quality="smooth" aria-pressed="false"><strong>流畅</strong><span>降低渲染精度，减少倒影开销</span></button>
+              <button type="button" data-quality="balanced" aria-pressed="false"><strong>均衡</strong><span>保留灯光与水面倒影</span></button>
+              <button type="button" data-quality="fine" aria-pressed="true"><strong>细腻</strong><span>更清晰的倒影与投影</span></button>
+            </div>
+            <p id="graphics-status" role="status">可随时切换画质</p>
+          </div>
+        </details>
+      </div>
+      <div id="exploration-hud" hidden>
+        <div id="walk-objective" role="status">沿临水栈道前往观鲸台</div>
+        <div id="walk-notice" aria-live="polite">沿青碧导光线前进，靠近路标会记录安全位置。</div>
+        <div class="walk-controls">WASD 移动 · Shift 奔跑 · 空格跳跃<br />按住鼠标左键转动视角 · 滚轮调远近 · R 返回安全位置</div>
+      </div>
+      <aside class="layer-panel" aria-label="场景层级显示">
+        <div class="mode-switch" role="group" aria-label="场景预览模式">
+          <button type="button" data-mode="night" aria-pressed="true">夜景氛围</button>
+          <button type="button" data-mode="study" aria-pressed="false">构图检查</button>
+        </div>
+        <div class="panel-heading"><span>空间层级</span><small>4 LAYERS</small></div>
+        <label><input type="checkbox" data-layer="foreground" checked /><span class="layer-index">01</span><span class="layer-name">前景楼阁与露台</span></label>
+        <label><input type="checkbox" data-layer="water" checked /><span class="layer-index">02</span><span class="layer-name">水面、桥与舟</span></label>
+        <label><input type="checkbox" data-layer="city" checked /><span class="layer-index">03</span><span class="layer-name">山体宫殿</span></label>
+        <label><input type="checkbox" data-layer="sky" checked /><span class="layer-index">04</span><span class="layer-name">天空与月亮</span></label>
+        <div id="night-controls" class="night-controls">
+          <label><input id="shadows-enabled" type="checkbox" checked /><span>月光与窗灯投影</span></label>
+          <label><input id="reflection-enabled" type="checkbox" checked /><span>水面倒影</span></label>
+          <label><input id="motion-enabled" type="checkbox" checked /><span>缓慢动态</span></label>
+        </div>
+        <div class="panel-note">月光投影 · 窗灯溢光<br />可关闭投影与倒影减轻开销</div>
+        <div class="asset-status" id="asset-status" role="status">正在加载场景 GLB…</div>
+      </aside>
+      <footer class="blockout-footer"><span>固定全景机位 · 场景预览</span><span>露台 → 水城 → 山巅宫阙</span><span>月色 · 灯火 · 青碧流光</span></footer>
+      <div id="blockout-error" class="blockout-error" hidden></div>
+    </main>
+  </body>
+</html>
+
