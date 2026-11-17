@@ -1,0 +1,10 @@
+[
+  { "id": "cyber-fortress", "title": "空间要塞", "category": "赛博建筑", "file": "assets/editor/cyber-fortress.glb", "thumbnail": "assets/editor/thumbnails/cyber-fortress.png", "span": 10, "source": "科幻空间要塞3d模型.glb" },
+  { "id": "cyber-station", "title": "环翼太空站", "category": "赛博建筑", "file": "assets/editor/cyber-station.glb", "thumbnail": "assets/editor/thumbnails/cyber-station.png", "span": 10, "source": "科幻太空站3d模型 (1).glb" },
+  { "id": "space-station", "title": "太空站", "category": "赛博建筑", "file": "assets/editor/space-station.glb", "thumbnail": "assets/editor/thumbnails/space-station.png", "span": 8, "source": "太空站3d模型.glb" },
+  { "id": "future-car", "title": "未来跑车", "category": "载具装饰", "file": "assets/scene/未来跑车3d模型.glb", "thumbnail": "assets/editor/thumbnails/future-car.png", "span": 4.5, "source": "未来跑车3d模型.glb" },
+  { "id": "chinese-hall", "title": "中式楼阁", "category": "中式建筑", "file": "assets/scene/中式建筑3d模型.glb", "thumbnail": "assets/editor/thumbnails/chinese-hall.png", "span": 8, "source": "中式建筑3d模型.glb" },
+  { "id": "chinese-pavilion", "title": "传统亭子", "category": "中式建筑", "file": "assets/scene/中国传统亭子3d模型.glb", "thumbnail": "assets/editor/thumbnails/chinese-pavilion.png", "span": 5, "source": "中国传统亭子3d模型.glb" },
+  { "id": "stone-bridge", "title": "石桥", "category": "中式建筑", "file": "assets/scene/桥梁3d模型.glb", "thumbnail": "assets/editor/thumbnails/stone-bridge.png", "span": 7, "source": "桥梁3d模型.glb" },
+  { "id": "red-lantern", "title": "红色宫灯", "category": "载具装饰", "file": "assets/scene/红色灯笼3d模型.glb", "thumbnail": "assets/editor/thumbnails/red-lantern.png", "span": 1.2, "source": "红色灯笼3d模型.glb" }
+]
