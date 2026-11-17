@@ -1,10 +1,137 @@
 [
-  { "id": "cyber-fortress", "title": "空间要塞", "category": "赛博建筑", "file": "assets/editor/cyber-fortress.glb", "thumbnail": "assets/editor/thumbnails/cyber-fortress.png", "span": 10, "source": "科幻空间要塞3d模型.glb" },
-  { "id": "cyber-station", "title": "环翼太空站", "category": "赛博建筑", "file": "assets/editor/cyber-station.glb", "thumbnail": "assets/editor/thumbnails/cyber-station.png", "span": 10, "source": "科幻太空站3d模型 (1).glb" },
-  { "id": "space-station", "title": "太空站", "category": "赛博建筑", "file": "assets/editor/space-station.glb", "thumbnail": "assets/editor/thumbnails/space-station.png", "span": 8, "source": "太空站3d模型.glb" },
-  { "id": "future-car", "title": "未来跑车", "category": "载具装饰", "file": "assets/scene/未来跑车3d模型.glb", "thumbnail": "assets/editor/thumbnails/future-car.png", "span": 4.5, "source": "未来跑车3d模型.glb" },
-  { "id": "chinese-hall", "title": "中式楼阁", "category": "中式建筑", "file": "assets/scene/中式建筑3d模型.glb", "thumbnail": "assets/editor/thumbnails/chinese-hall.png", "span": 8, "source": "中式建筑3d模型.glb" },
-  { "id": "chinese-pavilion", "title": "传统亭子", "category": "中式建筑", "file": "assets/scene/中国传统亭子3d模型.glb", "thumbnail": "assets/editor/thumbnails/chinese-pavilion.png", "span": 5, "source": "中国传统亭子3d模型.glb" },
-  { "id": "stone-bridge", "title": "石桥", "category": "中式建筑", "file": "assets/scene/桥梁3d模型.glb", "thumbnail": "assets/editor/thumbnails/stone-bridge.png", "span": 7, "source": "桥梁3d模型.glb" },
-  { "id": "red-lantern", "title": "红色宫灯", "category": "载具装饰", "file": "assets/scene/红色灯笼3d模型.glb", "thumbnail": "assets/editor/thumbnails/red-lantern.png", "span": 1.2, "source": "红色灯笼3d模型.glb" }
+  {
+    "id": "cyber-fortress",
+    "title": "空间要塞",
+    "category": "赛博建筑",
+    "file": "assets/editor/cyber-fortress.glb",
+    "thumbnail": "assets/editor/thumbnails/cyber-fortress.png",
+    "span": 10,
+    "source": "科幻空间要塞3d模型.glb"
+  },
+  {
+    "id": "cyber-station",
+    "title": "环翼太空站",
+    "category": "赛博建筑",
+    "file": "assets/editor/cyber-station.glb",
+    "thumbnail": "assets/editor/thumbnails/cyber-station.png",
+    "span": 10,
+    "source": "科幻太空站3d模型 (1).glb"
+  },
+  {
+    "id": "space-station",
+    "title": "太空站",
+    "category": "赛博建筑",
+    "file": "assets/editor/space-station.glb",
+    "thumbnail": "assets/editor/thumbnails/space-station.png",
+    "span": 8,
+    "source": "太空站3d模型.glb"
+  },
+  {
+    "id": "future-car",
+    "title": "未来跑车",
+    "category": "载具装饰",
+    "file": "assets/scene/未来跑车3d模型.glb",
+    "thumbnail": "assets/editor/thumbnails/future-car.png",
+    "span": 4.5,
+    "source": "未来跑车3d模型.glb"
+  },
+  {
+    "id": "chinese-hall",
+    "title": "中式楼阁",
+    "category": "中式建筑",
+    "file": "assets/scene/中式建筑3d模型.glb",
+    "thumbnail": "assets/editor/thumbnails/chinese-hall.png",
+    "span": 8,
+    "source": "中式建筑3d模型.glb"
+  },
+  {
+    "id": "chinese-pavilion",
+    "title": "传统亭子",
+    "category": "中式建筑",
+    "file": "assets/scene/中国传统亭子3d模型.glb",
+    "thumbnail": "assets/editor/thumbnails/chinese-pavilion.png",
+    "span": 5,
+    "source": "中国传统亭子3d模型.glb"
+  },
+  {
+    "id": "stone-bridge",
+    "title": "石桥",
+    "category": "中式建筑",
+    "file": "assets/scene/桥梁3d模型.glb",
+    "thumbnail": "assets/editor/thumbnails/stone-bridge.png",
+    "span": 7,
+    "source": "桥梁3d模型.glb"
+  },
+  {
+    "id": "red-lantern",
+    "title": "红色宫灯",
+    "category": "载具装饰",
+    "file": "assets/scene/红色灯笼3d模型.glb",
+    "thumbnail": "assets/editor/thumbnails/red-lantern.png",
+    "span": 1.2,
+    "source": "红色灯笼3d模型.glb"
+  },
+  {
+    "id": "snow-shop",
+    "title": "中式商铺",
+    "category": "雪街建筑",
+    "file": "assets/editor/snow-shop.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-shop.png",
+    "span": 7,
+    "source": "中式商铺3d模型.glb"
+  },
+  {
+    "id": "snow-gate",
+    "title": "三层门楼",
+    "category": "雪街建筑",
+    "file": "assets/editor/snow-gate.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-gate.png",
+    "span": 16,
+    "source": "中式三层建筑3d模型.glb"
+  },
+  {
+    "id": "snow-house",
+    "title": "飞檐木楼",
+    "category": "雪街建筑",
+    "file": "assets/editor/snow-house.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-house.png",
+    "span": 8,
+    "source": "中式建筑3d模型2.glb"
+  },
+  {
+    "id": "snow-tree",
+    "title": "枯树",
+    "category": "雪街陈设",
+    "file": "assets/editor/snow-tree.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-tree.png",
+    "span": 7,
+    "source": "枯树3d模型.glb"
+  },
+  {
+    "id": "snow-umbrella",
+    "title": "传统纸伞",
+    "category": "雪街陈设",
+    "file": "assets/editor/snow-umbrella.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-umbrella.png",
+    "span": 2,
+    "source": "传统雨伞3d模型.glb"
+  },
+  {
+    "id": "snow-cart",
+    "title": "木车",
+    "category": "雪街陈设",
+    "file": "assets/editor/snow-cart.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-cart.png",
+    "span": 2.5,
+    "source": "木制木车3d模型.glb"
+  },
+  {
+    "id": "snow-robe",
+    "title": "古装长袍陈设",
+    "category": "雪街陈设",
+    "file": "assets/editor/snow-robe.glb",
+    "thumbnail": "assets/editor/thumbnails/snow-robe.png",
+    "span": 1.7,
+    "source": "古装长袍3d模型.glb"
+  }
 ]
