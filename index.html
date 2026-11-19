@@ -8,17 +8,17 @@
     <title>云阙计划 · 听潮夜航</title>
     <script type="module" crossorigin src="./assets/GLTFLoader-C81Ak7Sc.js"></script>
     <script type="module" crossorigin src="./assets/scene-opening-CNIjarR6.js"></script>
-    <script type="module" crossorigin src="./assets/scene-blockout-OeHkgxvr.js"></script>
+    <script type="module" crossorigin src="./assets/scene-blockout-DK7o49Hh.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/scene-opening-713OyeOc.css">
-    <link rel="stylesheet" crossorigin href="./assets/scene-blockout-3DXn9JZ-.css">
+    <link rel="stylesheet" crossorigin href="./assets/scene-blockout-ILjjIONe.css">
   </head>
   <body class="voyage-page" data-experience="night-voyage">
     <main class="blockout-shell">
       <canvas id="blockout-canvas" tabindex="0" aria-label="听潮水城与云阙雪街连续世界"></canvas>
       <header class="blockout-header">
         <span class="back-link">云阙计划 · 朋友试玩</span>
-        <div><p>云阙计划 / 一张连续世界</p><h1>听潮夜航</h1></div>
-        <div class="phase">A CITY OF LANTERNS <span>V036</span></div>
+        <h1>听潮夜航</h1>
+        <div class="phase"><span>V037</span></div>
       </header>
       <div class="explore-actions">
         <button id="explore-toggle" type="button" disabled>进入探索</button>
@@ -29,12 +29,17 @@
           <span id="ambience-status" role="status">点击开启风声与水声</span>
         </div>
         <details id="graphics-settings" class="graphics-settings">
-          <summary><span id="graphics-label">画质 · 细腻</span></summary>
+          <summary aria-label="画质设置" title="画质设置"><span id="graphics-label">画质 · 细腻</span></summary>
           <div class="graphics-panel">
             <div class="graphics-options" role="group" aria-label="画质档位">
               <button type="button" data-quality="smooth" aria-pressed="false"><strong>流畅</strong><span>降低渲染精度，减少倒影开销</span></button>
               <button type="button" data-quality="balanced" aria-pressed="false"><strong>均衡</strong><span>保留灯光与水面倒影</span></button>
               <button type="button" data-quality="fine" aria-pressed="true"><strong>细腻</strong><span>更清晰的倒影与投影</span></button>
+            </div>
+            <div class="graphics-effects">
+              <label><input id="shadows-enabled" type="checkbox" checked />月光与窗灯投影</label>
+              <label><input id="reflection-enabled" type="checkbox" checked />水面倒影</label>
+              <label><input id="motion-enabled" type="checkbox" checked />缓慢动态</label>
             </div>
             <p id="graphics-status" role="status">可随时切换画质</p>
           </div>
@@ -55,11 +60,7 @@
         <label><input type="checkbox" data-layer="water" checked /><span class="layer-index">02</span><span class="layer-name">水面、桥与舟</span></label>
         <label><input type="checkbox" data-layer="city" checked /><span class="layer-index">03</span><span class="layer-name">山体宫殿</span></label>
         <label><input type="checkbox" data-layer="sky" checked /><span class="layer-index">04</span><span class="layer-name">天空与月亮</span></label>
-        <div id="night-controls" class="night-controls">
-          <label><input id="shadows-enabled" type="checkbox" checked /><span>月光与窗灯投影</span></label>
-          <label><input id="reflection-enabled" type="checkbox" checked /><span>水面倒影</span></label>
-          <label><input id="motion-enabled" type="checkbox" checked /><span>缓慢动态</span></label>
-        </div>
+        <div id="night-controls" class="night-controls" hidden></div>
         <div class="panel-note">月光投影 · 窗灯溢光<br />可关闭投影与倒影减轻开销</div>
         <div class="asset-status" id="asset-status" role="status">正在加载场景 GLB…</div>
       </aside>
